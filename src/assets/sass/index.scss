@@ -1,5 +1,8 @@
+@import "../sass/utils/normalize";
+
 body {
-  width: 100%;
-  height: auto;
-  border: 5px solid red;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
 }

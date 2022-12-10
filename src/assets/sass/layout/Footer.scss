@@ -1,0 +1,22 @@
+@import "../utils/mixin";
+
+.App-footer {
+  height: 209px;
+  font-size: 24px;
+  background-color: black;
+  color: white;
+
+  &-bloc {
+    padding-top: 62px;
+    @include flex-column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+  }
+  & p {
+    // padding-top: 30px;
+  }
+  @include break-point(mobile) {
+    font-size: 12px;
+  }
+}

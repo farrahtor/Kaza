@@ -1,5 +1,13 @@
+@import "../sass/utils/variables";
+@import "../sass/utils/mixin";
+
 .App {
-  width: 100%;
-  text-align: center;
-  border: 3px solid rgba(24, 209, 196, 0.592);
+  // width: 100%;
+  min-height: 100vh;
+  color: $color;
+  @include flex-column;
+  justify-content: space-between;
+}
+main {
+  border: 6px solid rgb(210, 14, 180);
 }

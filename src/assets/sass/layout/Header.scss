@@ -1,4 +1,38 @@
-header {
-  border: 2px solid black;
-  margin: 40px 100px;
+@import "../utils/mixin";
+
+.App-header {
+  margin: 40px 100px 20px;
+  display: flex;
+  justify-content: space-between;
+  @include break-point(mobile) {
+    margin: 20px;
+  }
+  & img {
+    @include break-point(mobile) {
+      width: 145px;
+      height: 47px;
+    }
+  }
+}
+.App-header-nav {
+  font-size: 24px;
+  margin: 17px 0;
+  display: flex;
+  align-items: center;
+  @include break-point(mobile) {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  & ul {
+    display: flex;
+    & li {
+      margin-left: 57px;
+      @include break-point(mobile) {
+        margin-left: 10px;
+      }
+    }
+    & li:hover {
+      border-bottom: 1px solid #ff6060;
+    }
+  }
 }
