@@ -7,7 +7,14 @@
   color: $color;
   @include flex-column;
   justify-content: space-between;
+  // border: 6px solid rgb(210, 14, 180);
 }
-main {
-  border: 6px solid rgb(210, 14, 180);
+.Main {
+  height: 600px;
+  padding: 20px;
+
+  @include flex-column;
+  justify-content: space-between;
+  align-content: space-between;
+  gap: 20px;
 }

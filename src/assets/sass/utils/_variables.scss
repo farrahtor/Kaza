@@ -1,12 +1,17 @@
-//Color
+//Colors
 $color: #ff6060;
+$bg-color: #e5e5e5;
 
 // Dégradé
 
-$degraded: linear-gradient(to left top, $color, black);
+$degraded: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 0) 0%,
+  rgba(0, 0, 0, 0.5) 100%
+);
 
 //Box Shadow
-$shadow: 0px 5px 5px rgba(118, 118, 118, 0.2);
+$shadow: 0px 5px 5px rgba(118, 118, 118, 0.5);
 
 // Transition
 $transition: all 0.3s ease-in-out;

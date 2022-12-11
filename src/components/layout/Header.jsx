@@ -9,7 +9,7 @@ export const Header = () => {
       </div>
       <nav className="App-header-nav">
         <ul>
-          <li>Accueil{/* <Link to="about">Home</Link> */}</li>
+          <li>Accueil</li>
           <li>A Propos</li>
         </ul>
       </nav>
