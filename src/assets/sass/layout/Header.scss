@@ -1,38 +1,48 @@
 @import "../utils/mixin";
+@import "../utils/variables";
 
 .App-header {
-  margin: 40px 100px 20px;
-  display: flex;
+  margin: 20px;
+  @include flex-row;
   justify-content: space-between;
-  @include break-point(mobile) {
-    margin: 20px;
+  @include break-point(tablet) {
+    margin: 40px 40px 20px;
   }
-  & img {
-    @include break-point(mobile) {
-      width: 145px;
-      height: 47px;
+  @include break-point(desktop) {
+    margin: 40px 100px 20px;
+  }
+
+  &-logo img {
+    @include break-point(desktop) {
+      width: 210px;
+      height: 68px;
     }
   }
 }
+
 .App-header-nav {
-  font-size: 24px;
   margin: 17px 0;
-  display: flex;
-  align-items: center;
-  @include break-point(mobile) {
-    font-size: 12px;
-    margin-bottom: 12px;
-  }
+  @include flex-center;
+  justify-content: flex-end;
+
   & ul {
-    display: flex;
-    & li {
+    @include flex-row;
+    align-items: center;
+  }
+  &-link {
+    font-size: 12px;
+    margin-left: 10px;
+    color: $color;
+    @include break-point(tablet) {
+      font-size: 20px;
+      margin-left: 40px;
+    }
+    @include break-point(desktop) {
+      font-size: 24px;
       margin-left: 57px;
-      @include break-point(mobile) {
-        margin-left: 10px;
-      }
     }
-    & li:hover {
-      border-bottom: 1px solid #ff6060;
-    }
+  }
+  &-link:hover {
+    border-bottom: 1px solid #ff6060;
   }
 }

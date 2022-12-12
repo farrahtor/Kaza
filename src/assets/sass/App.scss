@@ -2,19 +2,8 @@
 @import "../sass/utils/mixin";
 
 .App {
-  // width: 100%;
   min-height: 100vh;
   color: $color;
   @include flex-column;
   justify-content: space-between;
-  // border: 6px solid rgb(210, 14, 180);
-}
-.Main {
-  height: 600px;
-  padding: 20px;
-
-  @include flex-column;
-  justify-content: space-between;
-  align-content: space-between;
-  gap: 20px;
 }

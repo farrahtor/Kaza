@@ -1,0 +1,11 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+
+.Home {
+  min-height: 1095px;
+
+  margin-bottom: 100px;
+  @include flex-column;
+  justify-content: space-between;
+  gap: 20px;
+}
