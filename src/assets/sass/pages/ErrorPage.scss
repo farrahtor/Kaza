@@ -1,0 +1,48 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+
+#error-page {
+  min-height: 812px;
+  @include flex-column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.error-page {
+  @include flex-column;
+  align-items: center;
+
+  &-title {
+    height: 99px;
+    font-size: 96px;
+    margin: 175px auto 11px;
+    font-weight: 700;
+    text-shadow: $shadow;
+    @include flex-center;
+    @include break-point(desktop) {
+      height: 263px;
+      margin: 149px auto 66px;
+      font-size: 288px;
+    }
+  }
+  &-msg {
+    height: 52px;
+    font-size: 18px;
+    justify-content: center;
+    @include break-point(desktop) {
+      font-size: 36px;
+    }
+  }
+  &-link {
+    margin-bottom: 235px;
+    font-size: 14px;
+    color: $color;
+    @include break-point(desktop) {
+      margin-bottom: 159px;
+      font-size: 18px;
+    }
+  }
+  &-link:hover {
+    border-bottom: 1px solid $color;
+  }
+}
