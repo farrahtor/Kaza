@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../assets/sass/pages/ErrorPage.scss";
+import "../../assets/sass/routes/ErrorPage.scss";
 
 export const ErrorPage = () => {
   return (
