@@ -6,11 +6,13 @@ import { Banner } from "../desktop/Banner";
 import { Thumb } from "../desktop/Thumb";
 import { Tag } from "../desktop/Tag";
 import HomeImg from "../../assets/images/HomeBanner.jpg";
+import { DropDown } from "../desktop/DropDown";
 
 export const Home = () => {
   return (
     <div className="Home">
       <Banner image={HomeImg} text={"Chez vous, partout et ailleurs"} />
+      <DropDown />
       <Tag />
       <Thumb />
     </div>

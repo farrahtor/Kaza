@@ -6,7 +6,7 @@ export const Thumb = ({ imgSrc, imgAlt, title }) => {
   return (
     <div className="Thumb">
       <div className="Thumb-img">Image</div>
-      <div className="Thumb-title">Titre de la location{title}</div>
+      <h2 className="Thumb-title">Titre de la location{title}</h2>
     </div>
   );
 };
