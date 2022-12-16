@@ -13,7 +13,7 @@ export const Main = () => {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="housing" element={<Housing />} />
+        <Route path="housing/:id" element={<Housing />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </main>

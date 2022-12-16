@@ -1,29 +1,3 @@
-//Font
-@mixin title {
-  font-size: 24px;
-
-  @include break-point(tablet) {
-    font-size: 2rem;
-  }
-}
-@mixin subtitle {
-  font-size: 1rem;
-  font-weight: 400;
-  @include break-point(tablet) {
-    font-size: 1.2rem;
-  }
-}
-// Font pages
-@mixin pages-title {
-  font-family: $font-title;
-  font-size: 1.7rem;
-  padding: 0 0.8em;
-  @include break-point(tablet) {
-    font-size: 2rem;
-    margin-right: 4em;
-  }
-}
-
 //FLEX-BOX
 @mixin flex-column {
   display: flex;
@@ -42,7 +16,7 @@
 //MEDIA QUERIES
 @mixin break-point($point) {
   @if $point == desktop {
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 1040px) {
       @content;
     }
   } @else if $point == tablet {

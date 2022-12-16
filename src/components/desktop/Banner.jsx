@@ -1,13 +1,13 @@
 import React from "react";
 import "../../assets/sass/desktop/Banner.scss";
 
-export const Banner = ({ image, text }) => {
+export const Banner = ({ image, content }) => {
   return (
     <div className="Banner">
       <img src={image} alt="banniere" className="Banner-img" />
 
-      {text ? (
-        <p className="Banner-text">{text}</p>
+      {content ? (
+        <p className="Banner-text">{content}</p>
       ) : (
         <p className="Banner-text"></p>
       )}

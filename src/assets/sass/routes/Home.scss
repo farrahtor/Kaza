@@ -1,11 +1,30 @@
 @import "../utils/variables";
 @import "../utils/mixin";
 
-.Home {
+.Home-section {
   min-height: 1095px;
 
   margin-bottom: 100px;
   @include flex-column;
-  justify-content: space-between;
   gap: 20px;
+
+  &-houseCard {
+    margin-top: 20px;
+    background: $bg-color;
+    border-radius: 25px;
+    @include flex-column;
+    flex-wrap: wrap;
+    gap: 20px;
+    @include break-point(tablet) {
+      padding: 56px 50px;
+      gap: 35px;
+    }
+    @include break-point(desktop) {
+      @include flex-row;
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 50px;
+      column-gap: 60px;
+    }
+  }
 }
