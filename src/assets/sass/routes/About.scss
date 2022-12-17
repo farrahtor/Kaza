@@ -1,0 +1,16 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+
+.About {
+  min-height: 812px;
+  margin-bottom: 100px;
+  &-section-banner {
+    height: 223px;
+    margin-bottom: 20px;
+  }
+  &-section-collapse {
+    @include break-point(tablet) {
+      padding-top: 11px;
+    }
+  }
+}

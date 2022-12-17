@@ -1,11 +1,8 @@
-@import "../utils/variables";
-@import "../utils/mixin";
-
-.drop-down {
+.Collapse {
   @include flex-column;
 }
 
-.drop-down-btn {
+.Collapse-btn {
   padding: 6px 6px 6px 12px;
   color: #fff;
   background: $color;
@@ -26,10 +23,15 @@
     @include flex-center;
   }
 }
-.drop-down-list {
-  margin: -5px 0;
-  padding: 23px 12px 0;
-  font-size: 12px;
-  background: $bg-color;
-  border-radius: 5px;
+.Collapse-content {
+  &-list {
+    margin: -5px 0;
+    padding: 23px 12px 0;
+    font-size: 12px;
+    background: $bg-color;
+    border-radius: 5px;
+  }
+}
+.active .Collapse-list {
+  background: red;
 }

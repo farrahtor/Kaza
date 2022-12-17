@@ -4,6 +4,7 @@
 .App-main {
   min-height: 812px;
   margin: 0 20px;
+  @include flex-column;
 
   @include break-point(tablet) {
     margin: 0 40px;
