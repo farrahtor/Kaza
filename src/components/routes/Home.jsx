@@ -6,7 +6,7 @@ import { HouseCard } from "../desktop/HouseCard";
 
 export const Home = () => {
   return (
-    <div className="Home-section">
+    <div className="Home">
       <section className="Home-section-banner">
         <Banner image={HomeImg} content={"Chez vous, partout et ailleurs"} />
       </section>
