@@ -28,8 +28,7 @@
   & svg {
     width: 24px;
     height: 24px;
-    @include break-point(tablet) {
-    }
+
     @include break-point(desktop) {
       width: 46.68px;
       height: 79.2px;
@@ -39,8 +38,14 @@
 .arrow-next {
   transform: rotate(90deg);
   right: 0;
+  @include break-point(tablet) {
+    right: 1%;
+  }
 }
 .arrow-back {
   transform: rotate(-90deg);
   left: 0;
+  @include break-point(tablet) {
+    left: 1%;
+  }
 }
