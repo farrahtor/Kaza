@@ -6,7 +6,9 @@ export const Header = () => {
   return (
     <header className="App-header">
       <div className="App-header-logo">
-        <img src="../LOGO.svg" alt="Logo Kaza" />
+        <Link to={"/"}>
+          <img src="../LOGO.svg" alt="Logo Kaza" />
+        </Link>
       </div>
       <nav className="App-header-nav">
         <ul>
