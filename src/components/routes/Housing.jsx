@@ -10,30 +10,31 @@ import { Rating } from "../desktop/Rating";
 
 export const Housing = () => {
   const { id } = useParams();
-  const house = housingList.filter((h) => h.id === id);
-  console.log(house.title);
+  const house = housingList.find((h) => h.id === id);
 
-  return (
-    <div className="Housing">
-      {house.map(({ id, pictures, title, location, tags, rating, host }) => (
-        <>
-          <section className="Housing-section-slideshow">
-            <Slideshow key={id} pictures={pictures} />
-          </section>
-          <section className="Housing-section-infos">
-            <HouseInfos
-              key={id}
-              title={title}
-              location={location}
-              tags={tags}
+  if (house !== undefined) {
+    return (
+      <div className="housing">
+        <section className="housing-section-slideshow">
+          <Slideshow key={id} pictures={house.pictures} />
+        </section>
+        <section className="housing-section-infos">
+          <HouseInfos
+            key={house.id}
+            title={house.title}
+            location={house.location}
+            tags={house.tags}
+          />
+          <div className="housing-section-infos-host">
+            <Rating rating={house.rating} />
+            <HostInfos
+              rating={house.rating}
+              name={house.host.name}
+              picture={house.host.picture}
             />
-            <div className="Housing-section-infos-host">
-              <Rating rating={rating} />
-              <HostInfos key={id} rating={rating} hostName={host.name} />
-            </div>
-          </section>
-        </>
-      ))}
-    </div>
-  );
+          </div>
+        </section>
+      </div>
+    );
+  }
 };

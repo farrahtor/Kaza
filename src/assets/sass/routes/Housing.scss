@@ -1,7 +1,7 @@
 @import "../utils/variables";
 @import "../utils/mixin";
 
-.Housing {
+.housing {
   min-height: 812px;
   margin-bottom: 100px;
   @include flex-column;
@@ -9,7 +9,7 @@
 }
 
 //Informations location
-.Housing-section-infos {
+.housing-section-infos {
   width: 100%;
   @include break-point(tablet) {
     height: 90px;
@@ -22,14 +22,12 @@
     height: 128px;
   }
 
-  border: 1px solid black;
   &-host {
     height: 100%;
     @include flex-row;
     justify-content: space-between;
     align-items: center;
 
-    border: 1px solid blue;
     @include break-point(tablet) {
       flex-direction: column-reverse;
       align-items: flex-end;
