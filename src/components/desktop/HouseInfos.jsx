@@ -4,11 +4,11 @@ import "../../assets/sass/desktop/HouseInfos.scss";
 import { HouseTitle } from "./HouseTitle";
 import { Tag } from "./Tag";
 
-export const HouseInfos = ({ id, title, location, tags }) => {
+export const HouseInfos = ({ title, location, tags }) => {
   return (
     <div className="HouseInfos">
-      <HouseTitle key={id} title={title} location={location} />
-      <Tag key={id} tags={tags} />
+      <HouseTitle title={title} location={location} />
+      <Tag key={title} tags={tags} />
     </div>
   );
 };

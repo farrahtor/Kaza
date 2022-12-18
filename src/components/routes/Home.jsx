@@ -6,11 +6,11 @@ import { HouseCard } from "../desktop/HouseCard";
 
 export const Home = () => {
   return (
-    <div className="Home">
-      <section className="Home-section-banner">
+    <div className="home">
+      <section className="home-section-banner">
         <Banner image={HomeImg} content={"Chez vous, partout et ailleurs"} />
       </section>
-      <section className="Home-section-houseCard">
+      <section className="home-section-houseCard">
         {housingList.map(({ id, cover, title }) => (
           <HouseCard key={id} id={id} cover={cover} title={title} />
         ))}

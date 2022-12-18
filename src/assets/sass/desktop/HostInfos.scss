@@ -1,7 +1,7 @@
 @import "../utils/variables";
 @import "../utils/mixin";
 
-.HostInfos {
+.hostInfos {
   width: 135.5px;
   height: 33px;
   @include flex-row;

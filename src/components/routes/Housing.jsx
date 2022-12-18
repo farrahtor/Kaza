@@ -16,7 +16,7 @@ export const Housing = () => {
     return (
       <div className="housing">
         <section className="housing-section-slideshow">
-          <Slideshow key={id} pictures={house.pictures} />
+          <Slideshow pictures={house.pictures} />
         </section>
         <section className="housing-section-infos">
           <HouseInfos

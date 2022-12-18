@@ -1,7 +1,7 @@
 @import "../utils/variables";
 @import "../utils/mixin";
 
-.Rating {
+.rating {
   // width: 98px;
   // @include flex-row;
   // justify-content: space-between;
@@ -12,9 +12,15 @@
   &-star {
     width: 18px;
     height: 18px;
-    @include break-point(desktop) {
-      width: 36px;
-      height: 36px;
+
+    & svg {
+      width: 18px;
+      height: 18px;
+
+      @include break-point(desktop) {
+        width: 36px;
+        height: 36px;
+      }
     }
   }
 }
