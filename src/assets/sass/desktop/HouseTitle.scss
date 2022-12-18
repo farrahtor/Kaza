@@ -1,0 +1,26 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+
+.HouseTitle {
+  @include flex-column;
+  justify-content: space-between;
+
+  @include break-point(desktop) {
+    height: 77px;
+    padding-top: 15px;
+  }
+  &-title {
+    font-size: 18px;
+    padding-bottom: 5px;
+    @include break-point(desktop) {
+      font-size: 36px;
+      padding-bottom: 15px;
+    }
+  }
+  &-location {
+    font-size: 14px;
+    @include break-point(desktop) {
+      font-size: 18px;
+    }
+  }
+}

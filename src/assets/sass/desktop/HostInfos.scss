@@ -1,0 +1,34 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+
+.HostInfos {
+  width: 135.5px;
+  height: 33px;
+  @include flex-row;
+  justify-content: flex-end;
+
+  // @include break-point(desktop) {
+  //   height: 128px;
+  // }
+
+  &-name {
+    font-size: 12px;
+    line-height: 142.6%;
+    text-align: end;
+    padding-right: 10px;
+    @include break-point(desktop) {
+      font-size: 18px;
+    }
+  }
+  &-picture {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+    background: #c4c4c4;
+    @include break-point(desktop) {
+      width: 64px;
+      height: 64px;
+    }
+  }
+}

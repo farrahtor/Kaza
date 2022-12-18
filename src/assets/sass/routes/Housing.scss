@@ -1,0 +1,38 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+
+.Housing {
+  min-height: 812px;
+  margin-bottom: 100px;
+  @include flex-column;
+  gap: 15px;
+}
+
+//Informations location
+.Housing-section-infos {
+  width: 100%;
+  @include break-point(tablet) {
+    height: 90px;
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include break-point(desktop) {
+    height: 128px;
+  }
+
+  border: 1px solid black;
+  &-host {
+    height: 100%;
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid blue;
+    @include break-point(tablet) {
+      flex-direction: column-reverse;
+      align-items: flex-end;
+    }
+  }
+}

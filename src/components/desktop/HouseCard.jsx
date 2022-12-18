@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 export const HouseCard = ({ id, cover, title }) => {
   return (
     <article className="HouseCard" key={id} id={id}>
-      <NavLink to={"/housing/" + { id }}>
+      <NavLink to={"/housing/" + id}>
         <img src={cover} alt={title} className="HouseCard-img" />
         <h2 className="HouseCard-title">{title}</h2>
       </NavLink>
