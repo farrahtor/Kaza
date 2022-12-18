@@ -39,6 +39,10 @@
   &-icon {
     width: 18.42px;
     height: 18.42px;
+    @include break-point(tablet) {
+      width: 28.92px;
+      height: 28.92px;
+    }
   }
 }
 
@@ -75,7 +79,7 @@
 
 ////// Active
 /// Rotation Icone Bouton
-.Collapse-btn-icon {
+.Collapse-btn-icon-active {
   width: 18.42px;
   height: 18.42px;
   transform: rotate(180deg);
