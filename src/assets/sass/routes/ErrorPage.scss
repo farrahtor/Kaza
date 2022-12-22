@@ -8,10 +8,16 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  @include break-point(desktop) {
+    margin-top: 169px;
+    gap: 182px;
+  }
 }
 .error-page {
+  height: 380px;
   @include flex-column;
   align-items: center;
+  justify-content: space-between;
 
   &-title {
     height: 99px;
@@ -21,7 +27,7 @@
     @include flex-center;
     @include break-point(desktop) {
       height: 263px;
-      margin: 149px auto 66px;
+      // margin: 149px auto 66px;
       font-size: 288px;
     }
   }
