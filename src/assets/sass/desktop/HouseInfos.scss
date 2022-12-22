@@ -1,7 +1,6 @@
 @import "../utils/variables";
 @import "../utils/mixin";
 
-.HouseInfo {
-  // background: red;
+.houseInfo {
   @include flex-column;
 }

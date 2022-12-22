@@ -2,21 +2,25 @@
 @import "../utils/mixin";
 
 .rating {
-  // width: 98px;
-  // @include flex-row;
-  // justify-content: space-between;
+  width: 98px;
+  @include flex-row;
+  justify-content: space-between;
 
+  @include break-point(tablet) {
+    width: 124px;
+  }
   @include break-point(desktop) {
     width: 196px;
   }
   &-star {
-    width: 18px;
-    height: 18px;
-
     & svg {
       width: 18px;
       height: 18px;
 
+      @include break-point(tablet) {
+        width: 24px;
+        height: 24px;
+      }
       @include break-point(desktop) {
         width: 36px;
         height: 36px;

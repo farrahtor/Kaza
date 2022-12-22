@@ -1,16 +1,14 @@
 @import "../utils/variables";
 @import "../utils/mixin";
 
-.App-main {
-  min-height: 812px;
-  margin: 0 20px;
+.app-main {
+  margin: 0 20px 100px;
   @include flex-column;
 
   @include break-point(tablet) {
-    margin: 0 40px;
+    margin: 0 40px 100px;
   }
   @include break-point(desktop) {
-    min-height: 1024px;
-    margin: 0 100px;
+    margin: 0 100px 100px;
   }
 }

@@ -1,17 +1,58 @@
 @import "../utils/variables";
 @import "../utils/mixin";
 
-.About {
+//Page about
+.about {
   min-height: 812px;
   margin-bottom: 100px;
-  // background: #e5e5e5;
-  &-section-banner {
-    height: 223px;
-    margin-bottom: 20px;
+  @include flex-column;
+  gap: 20px;
+  align-items: center;
+  @include break-point(tablet) {
+    gap: 33px;
   }
-  &-section-collapse {
+}
+
+////// Section Banniere
+.about-section-banner {
+  height: 223px;
+}
+
+////// Section Collapse
+.about-section-collapse {
+  width: 100%;
+  @include flex-column;
+  gap: 20px;
+  @include break-point(tablet) {
+    width: 90%;
+    gap: 31px;
+  }
+  @include break-point(desktop) {
+    width: 80%;
+  }
+}
+// Collapse BTN
+.about-section-collapse .collapse-btn {
+  //Btn title
+  & .collapse-btn-title {
     @include break-point(tablet) {
-      padding-top: 11px;
+      font-size: 20px;
     }
+    @include break-point(desktop) {
+      font-size: 24px;
+    }
+  }
+}
+
+// Collapse paragraphe
+.collapse-para {
+  font-size: 12px;
+  @include break-point(tablet) {
+    font-size: 20px;
+    line-height: 34.22px;
+  }
+  @include break-point(desktop) {
+    font-size: 24px;
+    line-height: 34.22px;
   }
 }

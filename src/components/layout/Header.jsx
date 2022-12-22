@@ -4,20 +4,20 @@ import "../../assets/sass/layout/Header.scss";
 
 export const Header = () => {
   return (
-    <header className="App-header">
-      <div className="App-header-logo">
+    <header className="app-header">
+      <div className="app-header-logo">
         <Link to={"/"}>
           <img src="../LOGO.svg" alt="Logo Kaza" />
         </Link>
       </div>
-      <nav className="App-header-nav">
+      <nav className="app-header-nav">
         <ul>
           <Link to={"/"}>
-            <li className="App-header-nav-link">Accueil</li>
+            <li className="app-header-nav-link">Accueil</li>
           </Link>
           <Link to={"about"}>
             {" "}
-            <li className="App-header-nav-link">A Propos</li>
+            <li className="app-header-nav-link">A Propos</li>
           </Link>
         </ul>
       </nav>

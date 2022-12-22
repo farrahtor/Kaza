@@ -1,40 +1,38 @@
 @import "../utils/variables";
 @import "../utils/mixin";
 
+//Page home
 .home {
   min-height: 1095px;
-  margin-bottom: 100px;
-
   @include flex-column;
   gap: 20px;
-
   @include break-point(tablet) {
     gap: 43px;
   }
-  //Banner
-  &-section-banner {
-    height: 111px;
-    @include break-point(tablet) {
-      height: 223px;
-    }
+}
+//Section Banner
+.home-section-banner {
+  height: 111px;
+  @include break-point(tablet) {
+    height: 223px;
   }
-
-  &-section-houseCard {
-    background: $bg-color;
-    border-radius: 25px;
-    @include flex-column;
+}
+//Section houseCard
+.home-section-houseCard {
+  background: $bg-color;
+  border-radius: 25px;
+  @include flex-column;
+  flex-wrap: wrap;
+  gap: 20px;
+  @include break-point(tablet) {
+    padding: 56px 50px;
+    gap: 35px;
+  }
+  @include break-point(desktop) {
+    @include flex-row;
     flex-wrap: wrap;
-    gap: 20px;
-    @include break-point(tablet) {
-      padding: 56px 50px;
-      gap: 35px;
-    }
-    @include break-point(desktop) {
-      @include flex-row;
-      flex-wrap: wrap;
-      justify-content: center;
-      row-gap: 50px;
-      column-gap: 60px;
-    }
+    justify-content: center;
+    row-gap: 50px;
+    column-gap: 60px;
   }
 }

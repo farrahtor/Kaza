@@ -4,7 +4,6 @@ import "../../assets/sass/desktop/Rating.scss";
 export const Rating = ({ rating }) => {
   const stars = [1, 2, 3, 4, 5];
 
-  // console.log(stars);
   return (
     <div className="rating">
       {stars.map((star) =>

@@ -1,7 +1,7 @@
 @import "../utils/mixin";
 @import "../utils/variables";
 
-.App-header {
+.app-header {
   margin: 20px;
   @include flex-row;
   justify-content: space-between;
@@ -20,7 +20,7 @@
   }
 }
 
-.App-header-nav {
+.app-header-nav {
   margin: 17px 0;
   @include flex-center;
   justify-content: flex-end;

@@ -3,8 +3,8 @@ import "../../assets/sass/layout/Footer.scss";
 
 export const Footer = () => {
   return (
-    <footer className="App-footer">
-      <div className="App-footer-bloc">
+    <footer className="app-footer">
+      <div className="app-footer-bloc">
         <div>
           <img src="../LOGO2.svg" alt="Logo Kaza"></img>
         </div>

@@ -3,9 +3,9 @@ import "../../assets/sass/desktop/HouseTitle.scss";
 
 export const HouseTitle = ({ title, location }) => {
   return (
-    <div className="HouseTitle">
-      <h1 className="HouseTitle-title">{title}</h1>
-      <p className="HouseTitle-location">{location}</p>
+    <div className="houseTitle">
+      <h1 className="houseTitle-title">{title}</h1>
+      <p className="houseTitle-location">{location}</p>
     </div>
   );
 };

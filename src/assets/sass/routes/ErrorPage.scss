@@ -2,7 +2,8 @@
 @import "../utils/mixin";
 
 #error-page {
-  min-height: 812px;
+  min-height: 315px;
+  margin-top: 195px;
   @include flex-column;
   justify-content: space-between;
   align-items: center;
@@ -15,7 +16,6 @@
   &-title {
     height: 99px;
     font-size: 96px;
-    margin: 175px auto 11px;
     font-weight: 700;
     text-shadow: $shadow;
     @include flex-center;
@@ -34,7 +34,6 @@
     }
   }
   &-link {
-    margin-bottom: 235px;
     font-size: 14px;
     color: $color;
     @include break-point(desktop) {

@@ -9,7 +9,7 @@ import { ErrorPage } from "../routes/ErrorPage";
 
 export const Main = () => {
   return (
-    <main className="App-main">
+    <main className="app-main">
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="about" element={<About />} />

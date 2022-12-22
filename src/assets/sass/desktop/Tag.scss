@@ -1,7 +1,7 @@
 @import "../utils/variables";
 @import "../utils/mixin";
 
-.Tag-bloc {
+.tag-bloc {
   width: 100%;
   @include flex-row;
   flex-wrap: wrap;
@@ -11,7 +11,7 @@
     padding: 20px 0;
   }
 }
-.Tag {
+.tag {
   min-width: 84px;
   height: 18px;
   border-radius: 5px;
