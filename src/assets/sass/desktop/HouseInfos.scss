@@ -1,6 +1,11 @@
 @import "../utils/variables";
 @import "../utils/mixin";
 
-.houseInfo {
+.houseInfos {
+  width: 100%;
   @include flex-column;
+  justify-content: space-between;
+  @include break-point(tablet) {
+    min-height: 101px;
+  }
 }

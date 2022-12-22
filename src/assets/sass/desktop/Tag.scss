@@ -6,25 +6,24 @@
   @include flex-row;
   flex-wrap: wrap;
   gap: 10px;
-  padding: 10px 0;
-  @include break-point(desktop) {
-    padding: 20px 0;
-  }
 }
 .tag {
   min-width: 84px;
   height: 18px;
   border-radius: 5px;
   background: $color;
+
   @include break-point(tablet) {
-    width: 115px;
+    min-width: 115px;
     height: 25px;
+    border-radius: 10px;
   }
   &-name {
-    font-size: 10px;
+    height: 100%;
     padding: 0 5px;
-    @include flex-center;
+    font-size: 10px;
     color: white;
+    @include flex-center;
     @include break-point(tablet) {
       font-size: 14px;
       padding: 3px;

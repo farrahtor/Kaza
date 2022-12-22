@@ -6,7 +6,7 @@ import { Tag } from "./Tag";
 
 export const HouseInfos = ({ title, location, tags }) => {
   return (
-    <div className="HouseInfos">
+    <div className="houseInfos">
       <HouseTitle title={title} location={location} />
       <Tag key={title} tags={tags} />
     </div>

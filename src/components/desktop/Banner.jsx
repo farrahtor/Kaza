@@ -4,7 +4,7 @@ import "../../assets/sass/desktop/Banner.scss";
 export const Banner = ({ image, content }) => {
   return (
     <div className="banner">
-      <img src={image} alt="banniere" className="Banner-img" />
+      <img src={image} alt="banniere" className="banner-img" />
 
       {content ? (
         <p className="banner-text">{content}</p>

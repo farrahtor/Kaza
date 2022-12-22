@@ -7,13 +7,17 @@ import { Collapse } from "../desktop/Collapse";
 
 export const About = () => {
   return (
-    <div className="About">
-      <section className="About-section-banner">
+    <div className="about">
+      <section className="about-section-banner">
         <Banner image={AboutImg} />
       </section>
-      <section className="About-section-collapse">
+      <section className="about-section-collapse">
         {aboutData.map(({ title, content }) => (
-          <Collapse title={title} content={content} />
+          <Collapse
+            key={title}
+            title={title}
+            content={<p className="collapse-para">{content}</p>}
+          />
         ))}
       </section>
     </div>

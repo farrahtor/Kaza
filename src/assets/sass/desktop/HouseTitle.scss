@@ -3,24 +3,23 @@
 
 .houseTitle {
   @include flex-column;
-  justify-content: space-between;
-
   @include break-point(desktop) {
-    height: 77px;
-    padding-top: 15px;
   }
   &-title {
     font-size: 18px;
+    line-height: 25.67px;
     padding-bottom: 5px;
     @include break-point(desktop) {
       font-size: 36px;
-      padding-bottom: 15px;
+      line-height: 51.34px;
     }
   }
   &-location {
     font-size: 14px;
+    line-height: 19.96px;
     @include break-point(desktop) {
       font-size: 18px;
+      line-height: 51.34px;
     }
   }
 }
