@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 import { HouseInfos } from "../desktop/HouseInfos";
 import { HostInfos } from "../desktop/HostInfos";
 import { Rating } from "../desktop/Rating";
+import { Collapse } from "../desktop/Collapse";
 
 export const Housing = () => {
   const { id } = useParams();
@@ -33,6 +34,25 @@ export const Housing = () => {
               picture={house.host.picture}
             />
           </div>
+        </section>
+
+        <section className="housing-section-collapse">
+          <Collapse
+            title={"Description"}
+            content={
+              <p className="collapse-housing-content">{house.description}</p>
+            }
+          />
+          <Collapse
+            title={"Équipements"}
+            content={
+              <ul className="collapse-housing-content">
+                {house.equipments.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            }
+          />
         </section>
       </div>
     );

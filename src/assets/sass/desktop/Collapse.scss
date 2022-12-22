@@ -1,45 +1,39 @@
 @import "../utils/variables";
 @import "../utils/mixin";
 
-.Collapse-bloc {
+.collapse-bloc {
   width: 100%;
-  margin-bottom: 20px;
   @include flex-column;
-  @include break-point(desktop) {
-    width: 80%;
-    margin: 0 auto 31px;
-  }
 }
 //Bouton
-.Collapse-btn {
+.collapse-btn {
   width: 100%;
   height: 30px;
   padding: 0 1.53% 0 3.44%;
   background: $color;
   z-index: 1;
   border-radius: 5px;
+  @include flex-row;
+  justify-content: space-between;
+  align-items: center;
+
   @include break-point(tablet) {
     height: 47px;
     padding: 0 2.94% 0 1.77%;
   }
-
-  @include flex-row;
-  justify-content: space-between;
-  align-items: center;
+  // Btn title
   &-title {
     color: #fff;
     font-size: 13px;
-    @include break-point(tablet) {
-      font-size: 20px;
-    }
-    @include break-point(desktop) {
-      font-size: 24px;
-    }
   }
   &-icon {
     width: 18.42px;
     height: 18.42px;
     @include break-point(tablet) {
+      width: 20.92px;
+      height: 20.92px;
+    }
+    @include break-point(desktop) {
       width: 28.92px;
       height: 28.92px;
     }
@@ -47,39 +41,21 @@
 }
 
 //Contenue
-.Collapse-content {
+.collapse-content {
   min-height: 143.32px;
   margin: -5px 0;
-  padding: 23px 12px 0;
+  padding: 23px 12px 19px;
   border-radius: 5px;
   background: $bg-color;
   @include break-point(tablet) {
+    min-height: 249px;
     padding: 36px 27px 19px 18px;
-  }
-
-  // Paragraphe
-  &-para {
-    font-size: 12px;
-    @include break-point(tablet) {
-      font-size: 20px;
-      line-height: 34.22px;
-    }
-    @include break-point(desktop) {
-      font-size: 24px;
-      line-height: 34.22px;
-    }
-  }
-
-  //Listes
-  &-list {
-    visibility: hidden;
-    height: 0;
   }
 }
 
 ////// Active
 /// Rotation Icone Bouton
-.Collapse-btn-icon-active {
+.collapse-btn-icon-active {
   width: 18.42px;
   height: 18.42px;
   transform: rotate(180deg);
@@ -89,7 +65,7 @@
   }
 }
 ///Caché le Contenue
-.Collapse-content-active {
+.collapse-content-active {
   visibility: hidden;
   height: 0;
 }

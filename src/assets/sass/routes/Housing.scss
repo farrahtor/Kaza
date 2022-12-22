@@ -2,13 +2,11 @@
 @import "../utils/mixin";
 
 .housing {
-  min-height: 812px;
-  margin-bottom: 100px;
   @include flex-column;
   gap: 15px;
 }
 
-//Informations location
+////// Section Informations location
 .housing-section-infos {
   width: 100%;
   @include break-point(tablet) {
@@ -17,11 +15,11 @@
     justify-content: space-between;
     align-items: center;
   }
-
   @include break-point(desktop) {
     height: 128px;
   }
 
+  //Host infos
   &-host {
     height: 100%;
     @include flex-row;
@@ -32,5 +30,37 @@
       flex-direction: column-reverse;
       align-items: flex-end;
     }
+  }
+}
+
+////// Section Collapse
+.housing-section-collapse {
+  line-height: 17.11px;
+  @include flex-row;
+  flex-wrap: wrap;
+  gap: 20px;
+  @include break-point(tablet) {
+    line-height: 25.67px;
+    flex-wrap: nowrap;
+    column-gap: 40px;
+  }
+  @include break-point(desktop) {
+    column-gap: 76px;
+  }
+}
+// Collapse btn
+.housing-section-collapse .collapse-btn {
+  @include break-point(tablet) {
+    padding-left: 20px;
+    &-title {
+      font-size: 18px;
+    }
+  }
+}
+// Collapse conten
+.housing-section-collapse .collapse-content {
+  font-size: 12px;
+  @include break-point(tablet) {
+    font-size: 18px;
   }
 }
