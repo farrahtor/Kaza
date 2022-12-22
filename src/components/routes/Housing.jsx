@@ -16,9 +16,11 @@ export const Housing = () => {
   if (house !== undefined) {
     return (
       <div className="housing">
+        {/* //Slider */}
         <section className="housing-section-slideshow">
           <Slideshow pictures={house.pictures} />
         </section>
+        {/* Infos */}
         <section className="housing-section-infos">
           <HouseInfos
             key={house.id}
@@ -35,7 +37,7 @@ export const Housing = () => {
             />
           </div>
         </section>
-
+        {/* Collapse */}
         <section className="housing-section-collapse">
           <Collapse
             title={"Description"}

@@ -4,31 +4,42 @@
 .housing {
   @include flex-column;
   gap: 15px;
+  @include break-point(desktop) {
+    gap: 33px;
+  }
 }
 
 ////// Section Informations location
 .housing-section-infos {
   width: 100%;
+  min-height: 150px;
+  @include flex-row;
+  flex-wrap: wrap;
   @include break-point(tablet) {
-    height: 90px;
-    @include flex-row;
+    min-height: 101px;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
   }
   @include break-point(desktop) {
-    height: 128px;
+    min-height: 128px;
   }
+}
+//Host infos
+.housing-section-infos-host {
+  width: 100%;
+  min-height: 33px;
+  @include flex-row;
+  justify-content: space-between;
+  align-items: center;
 
-  //Host infos
-  &-host {
-    height: 100%;
-    @include flex-row;
-    justify-content: space-between;
-    align-items: center;
-
-    @include break-point(tablet) {
-      flex-direction: column-reverse;
-      align-items: flex-end;
+  @include break-point(tablet) {
+    width: 20%;
+    min-height: 101px;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    @include break-point(desktop) {
+      min-height: 128px;
     }
   }
 }
