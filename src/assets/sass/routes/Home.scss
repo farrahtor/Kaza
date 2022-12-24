@@ -3,11 +3,14 @@
 
 //Page home
 .home {
-  min-height: 1095px;
+  // min-height: 1095px;
   @include flex-column;
   gap: 20px;
   @include break-point(tablet) {
     gap: 43px;
+  }
+  @include break-point(desktop) {
+    gap: 63px;
   }
 }
 //Section Banner
@@ -19,16 +22,17 @@
 }
 //Section houseCard
 .home-section-houseCard {
-  background: $bg-color;
   border-radius: 25px;
-  @include flex-column;
+  @include flex-row;
   flex-wrap: wrap;
   gap: 20px;
   @include break-point(tablet) {
-    padding: 56px 50px;
-    gap: 35px;
+    background: $bg-color;
+    justify-content: center;
+    padding: 40px 0px;
   }
   @include break-point(desktop) {
+    padding: 56px 0px;
     @include flex-row;
     flex-wrap: wrap;
     justify-content: center;

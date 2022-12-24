@@ -8,11 +8,10 @@
   position: relative;
   font-size: 18px;
   @include break-point(tablet) {
+    width: 340px;
     height: 340px;
   }
-  @include break-point(desktop) {
-    width: 340px;
-  }
+
   &-img {
     width: 100%;
     height: 100%;
