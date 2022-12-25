@@ -1,5 +1,7 @@
 import React from "react";
+
 import "../../assets/sass/routes/About.scss";
+
 import AboutImg from "../../assets/images/AboutBanner.jpg";
 import { aboutData } from "../../datas/aboutData";
 import { Banner } from "../desktop/Banner";

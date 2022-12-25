@@ -5,22 +5,13 @@ import "../../assets/sass/desktop/Slideshow.scss";
 export const Slideshow = ({ pictures = [] }) => {
   const [index, setIndex] = useState(0);
   const picturesLength = pictures.length;
-  console.log(picturesLength);
 
   const nextClick = (e) => {
-    if (index === pictures.length - 1) {
-      setIndex(0);
-    } else {
-      setIndex(index + 1);
-    }
+    setIndex(index === picturesLength - 1 ? 0 : index + 1);
   };
 
   const backClick = (e) => {
-    if (index === 0) {
-      setIndex(index + 1);
-    } else {
-      setIndex(index - 1);
-    }
+    setIndex(index === 0 ? picturesLength - 1 : index - 1);
   };
 
   return (

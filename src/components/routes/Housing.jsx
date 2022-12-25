@@ -8,6 +8,7 @@ import { HouseInfos } from "../desktop/HouseInfos";
 import { HostInfos } from "../desktop/HostInfos";
 import { Rating } from "../desktop/Rating";
 import { Collapse } from "../desktop/Collapse";
+import { ErrorPage } from "./ErrorPage";
 
 export const Housing = () => {
   const { id } = useParams();
@@ -58,5 +59,7 @@ export const Housing = () => {
         </section>
       </div>
     );
+  } else {
+    return <ErrorPage />;
   }
 };

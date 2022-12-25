@@ -2,8 +2,6 @@
 @import "../utils/mixin";
 
 #error-page {
-  min-height: 315px;
-  margin-top: 195px;
   @include flex-column;
   justify-content: space-between;
   align-items: center;
@@ -14,10 +12,14 @@
   }
 }
 .error-page {
-  height: 380px;
+  height: 162px;
   @include flex-column;
   align-items: center;
   justify-content: space-between;
+  @include break-point(desktop) {
+    height: 380px;
+    margin: 0;
+  }
 
   &-title {
     height: 99px;
@@ -27,13 +29,13 @@
     @include flex-center;
     @include break-point(desktop) {
       height: 263px;
-      // margin: 149px auto 66px;
       font-size: 288px;
     }
   }
   &-msg {
-    height: 52px;
+    min-height: 52px;
     font-size: 18px;
+    line-height: 35px;
     justify-content: center;
     @include break-point(desktop) {
       font-size: 36px;

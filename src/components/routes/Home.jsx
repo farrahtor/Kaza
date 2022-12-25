@@ -1,7 +1,8 @@
+import "../../assets/sass/routes/Home.scss";
+
+import HomeImg from "../../assets/images/HomeBanner.jpg";
 import { housingList } from "../../datas/housingList";
 import { Banner } from "../desktop/Banner";
-import HomeImg from "../../assets/images/HomeBanner.jpg";
-import "../../assets/sass/routes/Home.scss";
 import { HouseCard } from "../desktop/HouseCard";
 
 export const Home = () => {
