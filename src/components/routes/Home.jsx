@@ -12,9 +12,11 @@ export const Home = () => {
         <Banner image={HomeImg} content={"Chez vous, partout et ailleurs"} />
       </section>
       <section className="home-section-houseCard">
-        {housingList.map(({ id, cover, title }) => (
-          <HouseCard key={id} id={id} cover={cover} title={title} />
-        ))}
+        <div className="houseCard-container">
+          {housingList.map(({ id, cover, title }) => (
+            <HouseCard key={id} id={id} cover={cover} title={title} />
+          ))}
+        </div>
       </section>
     </div>
   );

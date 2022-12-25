@@ -23,15 +23,22 @@
 //Section houseCard
 .home-section-houseCard {
   border-radius: 25px;
+  @include break-point(tablet) {
+    background: $bg-color;
+  }
+}
+.houseCard-container {
+  margin: auto;
+
   @include flex-row;
   flex-wrap: wrap;
   gap: 20px;
   @include break-point(tablet) {
-    background: $bg-color;
     justify-content: center;
     padding: 40px 0px;
   }
   @include break-point(desktop) {
+    max-width: 1240px;
     padding: 56px 0px;
     @include flex-row;
     flex-wrap: wrap;
