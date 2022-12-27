@@ -29,22 +29,22 @@
     @include flex-row;
     align-items: center;
   }
-  &-link {
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-left: 10px;
-    color: $color;
-    @include break-point(tablet) {
-      font-size: 20px;
-      margin-left: 40px;
-    }
-    @include break-point(desktop) {
-      font-size: 24px;
-      text-transform: none;
-      margin-left: 57px;
-    }
+}
+.app-header-nav-link a {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-left: 10px;
+  color: $color;
+  @include break-point(tablet) {
+    font-size: 20px;
+    margin-left: 40px;
   }
-  &-link:hover {
-    border-bottom: 1px solid #ff6060;
+  @include break-point(desktop) {
+    font-size: 24px;
+    text-transform: none;
+    margin-left: 57px;
   }
+}
+.active {
+  border-bottom: 1px solid $color;
 }

@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import "../../assets/sass/layout/Header.scss";
 
 export const Header = () => {
@@ -12,13 +12,22 @@ export const Header = () => {
       </div>
       <nav className="app-header-nav">
         <ul>
-          <Link to={"/"}>
-            <li className="app-header-nav-link">Accueil</li>
-          </Link>
-          <Link to={"about"}>
-            {" "}
-            <li className="app-header-nav-link">A Propos</li>
-          </Link>
+          <li className="app-header-nav-link">
+            <NavLink
+              to={"/"}
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Accueil
+            </NavLink>
+          </li>
+          <li className="app-header-nav-link">
+            <NavLink
+              to={"about"}
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              A Propos
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>
